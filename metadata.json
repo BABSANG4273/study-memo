@@ -1,0 +1,6 @@
+{
+  "name": "오늘의 수업 일지 & 메모 (엑셀 저장)",
+  "description": "오늘 진행된 수업을 간편하게 기록하고 과목별 메모를 정리하여 엑셀 파일로 바로 다운로드 저장하는 수업 일지 앱입니다.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
