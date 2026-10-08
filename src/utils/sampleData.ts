@@ -1,0 +1,58 @@
+import { Lesson } from '../types/lesson';
+
+export function getSampleLessons(dateString: string): Lesson[] {
+  return [
+    {
+      id: 'sample-1',
+      date: dateString,
+      period: '1교시 (09:00~09:50)',
+      subject: '수학',
+      className: '2학년 3반',
+      topic: '3단원 이차방정식의 풀이 및 근의 공식',
+      homework: '교과서 78~81쪽 연습문제 풀고 오답노트 작성',
+      memo: '근의 공식 유도 과정을 칠판에 시연함. 3분단 학생들이 인수분해와 헷갈려 하여 짝활동 문제 풀이 진행. 지훈이와 민우가 풀이 과정을 잘 이해함.',
+      status: '완료',
+      createdAt: Date.now() - 3600000 * 4,
+      updatedAt: Date.now() - 3600000 * 3,
+    },
+    {
+      id: 'sample-2',
+      date: dateString,
+      period: '2교시 (10:00~10:50)',
+      subject: '영어',
+      className: '2학년 1반',
+      topic: 'Lesson 4: Reading Comprehension & 주요 어휘',
+      homework: '단어장 Day 12 암기 및 워크북 p.34 풀기',
+      memo: '본문 1~2문단 단체 낭독 및 퀴즈 진행. 영작 활동 시 시제(과거분사) 사용 주의 환기. 다음 시간 단어 구두시험 예고함.',
+      status: '완료',
+      createdAt: Date.now() - 3600000 * 3,
+      updatedAt: Date.now() - 3600000 * 2,
+    },
+    {
+      id: 'sample-3',
+      date: dateString,
+      period: '4교시 (11:50~12:40)',
+      subject: '과학',
+      className: '2학년 3반',
+      topic: '물질의 특성 - 밀도 측정 실험',
+      homework: '실험 보고서 정리해 구글 클래스룸에 제출 (금요일까지)',
+      memo: '과학실에서 메스실린더와 전자저울을 활용해 에탄올과 물의 밀도 비교 실험 진행. 유리 기구 파손 없이 안전하게 완료. 4조 측정 결과 오차 분석 필요.',
+      status: '완료',
+      createdAt: Date.now() - 3600000 * 2,
+      updatedAt: Date.now() - 3600000 * 1,
+    },
+    {
+      id: 'sample-4',
+      date: dateString,
+      period: '5교시 (13:40~14:30)',
+      subject: '국어',
+      className: '2학년 2반',
+      topic: '현대시 감상과 비유적 표현 분석',
+      homework: '자신만의 비유 표현 3가지 창작해 오기',
+      memo: '윤동주 <서시> 낭송 및 시어의 상징적 의미 토론. 모둠별 해석 발표 호응도 높았음. 시 창작 과제 가이드라인 배포 완료.',
+      status: '진행중',
+      createdAt: Date.now() - 3600000,
+      updatedAt: Date.now(),
+    },
+  ];
+}
